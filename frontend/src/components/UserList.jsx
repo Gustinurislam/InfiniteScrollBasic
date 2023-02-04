@@ -19,7 +19,6 @@ const UserList = () => {
     const response = await axios.get(
       `http://localhost:5000/users?search_query=${keyword}&lastId=${lastId}&limit=${limit}`,
     );
-    console.log('response' + response);
     const newUsers = response.data.result;
     setUsers([...users, ...newUsers]);
     setTempId(response.data.lastId);
@@ -60,8 +59,8 @@ const UserList = () => {
         hasMore={hasMore}
         loader={<h4>Loading . . .</h4>}
       >
-        <div className="overflow-x-scroll">
-            <div className='grid grid-cols-5 text-lg font-medium mb-3'>
+        <div className="">
+            <div className='grid grid-cols-5 text-lg md:text-2xl font-medium mb-3'>
               <h2>No</h2>
               <h2>ID</h2>
               <h2>Name</h2>
@@ -69,7 +68,7 @@ const UserList = () => {
               <h2>Email</h2>
             </div>
             {users.map((user, index) => (
-              <div className='grid grid-cols-5 space-y-1 text-base' key={index}>
+              <div className='grid grid-cols-5 space-y-1 text-base md:text-lg' key={index}>
                 <h3>{index + 1}</h3>
                 <h3>{user.id}</h3>
                 <h3>{user.name}</h3>
