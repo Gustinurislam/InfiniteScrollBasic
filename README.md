@@ -1,7 +1,7 @@
 # Fullstack Javascript - Inifnite Scroll Basic
 
-## Mobile:
+## Mobile :
 
-## Tablet
+## Tablet :
 
 ## Desktop 
