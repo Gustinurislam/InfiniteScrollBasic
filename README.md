@@ -1,7 +1,10 @@
-# Fullstack Javascript - Inifnite Scroll Basic
+# Inifnite Scroll Basic
 
-## Mobile :
+## Mobile
+![Mobile View](ui/mobile.png)
 
-## Tablet :
+## Tablet
+![Tablet View](ui/tablet.png)
 
-## Desktop :
+## Desktop
+![Desktop View](ui/desktop.png)
